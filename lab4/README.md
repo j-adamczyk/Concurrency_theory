@@ -10,6 +10,7 @@ it with semaphores and/or monitors.
 Buffer has a size 2M, holding identical objects. There are many producers and consumers:  
   - producers put (0, M] elements to buffer (random amount)  
   - consumers take (0, M] elements from buffer (random amount)  
+
 Implements 2 versions of synchronization problem for this situation:  
   - naive solution: producers and consumers wait for enough space/data in buffer  
   - just solution: no proceses encounter starvation; do not use process priorities  
